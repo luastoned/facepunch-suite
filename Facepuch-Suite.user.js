@@ -6,6 +6,8 @@
 // @include     http*://*facepunch.com/threads*
 // @version     1.0
 // @grant       none
+// @downloadURL https://github.com/luastoned/facepunch-suite/raw/master/Facepuch-Suite.user.js
+// @updateURL   https://github.com/luastoned/facepunch-suite/raw/master/Facepuch-Suite.user.js
 // ==/UserScript==
 
 var FPSuite =
