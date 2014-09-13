@@ -1,4 +1,6 @@
-facepunch-suite
+Facepunch Suite
 ===============
 
-Make browsing Facepunch a little more enjoyable
+This script will make browsing Facepunch a little more enjoyable.
+  
+[Install from Github](https://github.com/luastoned/facepunch-suite/raw/master/Facepuch-Suite.user.js)
