@@ -4,7 +4,7 @@
 // @description Make browsing Facepunch a little more enjoyable
 // @include     http*://*facepunch.com/showthread*
 // @include     http*://*facepunch.com/threads*
-// @version     1.0
+// @version     1.1
 // @grant       none
 // @downloadURL https://github.com/luastoned/facepunch-suite/raw/master/FPSuite.user.js
 // @updateURL   https://github.com/luastoned/facepunch-suite/raw/master/FPSuite.user.js
@@ -198,12 +198,17 @@ var FPSuite =
 
 		var prevPage = prevElem.rel == "prev" ? prevElem.href : window.location;
 		var nextPage = nextElem.rel == "next" ? nextElem.href : window.location;
+		
+		var textArea = document.getElementsByTagName("textarea")[2];
 
 		document.onkeypress = function(evt)
 		{
 			evt = evt || window.event;
 			charCode = evt.keyCode || evt.which;
 			charStr = String.fromCharCode(charCode);
+			
+			if (document.activeElement == textArea)
+				return;
 			
 			if (charStr != "j" && charStr != "k")
 				return;
