@@ -199,15 +199,13 @@ var FPSuite =
 		var prevPage = prevElem.rel == "prev" ? prevElem.href : window.location;
 		var nextPage = nextElem.rel == "next" ? nextElem.href : window.location;
 		
-		var textArea = document.getElementsByTagName("textarea")[2];
-
 		document.onkeypress = function(evt)
 		{
 			evt = evt || window.event;
 			charCode = evt.keyCode || evt.which;
 			charStr = String.fromCharCode(charCode);
 			
-			if (document.activeElement == textArea)
+			if (document.activeElement.classList.contains("cke_source"))
 				return;
 			
 			if (charStr != "j" && charStr != "k")
