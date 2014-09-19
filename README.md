@@ -1,4 +1,4 @@
-Facepunch Suite
+Facepunch Suite1
 ===
 
 This script will make browsing Facepunch a little more enjoyable.
